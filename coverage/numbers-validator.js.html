@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">74.57% </span>
+                <span class="strong">93.22% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>44/59</span>
+                <span class='fraction'>55/59</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">81.81% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>9/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>6/6</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">74.57% </span>
+                <span class="strong">93.22% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>44/59</span>
+                <span class='fraction'>55/59</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -128,30 +128,22 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -159,11 +151,19 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -201,27 +201,27 @@ class NumbersValidator {
     // Method to extract even numbers from an array
     // @param {Array&lt;Number&gt;} arrayOfNumbers - The array containing numbers to be checked
     // @return {Array&lt;Number&gt;} - An array of even numbers
-<span class="fstat-no" title="function not covered" >    getEvenNumbersFromArray(arrayOfNumbers) {</span>
-<span class="cstat-no" title="statement not covered" >      // Check if the input is an array and if every item is of type number</span>
-<span class="cstat-no" title="statement not covered" >      if (Array.isArray(arrayOfNumbers) &amp;&amp; arrayOfNumbers.every(item =&gt; typeof item === 'number')) {</span>
-<span class="cstat-no" title="statement not covered" >        // Use the filter method to apply isNumberEven on each element and return an array of even numbers</span>
-<span class="cstat-no" title="statement not covered" >        return arrayOfNumbers.filter(this.isNumberEven);</span>
-<span class="cstat-no" title="statement not covered" >      }</span>
-<span class="cstat-no" title="statement not covered" >      // If the input is not an array of numbers, throw an error</span>
+    getEvenNumbersFromArray(arrayOfNumbers) {
+      // Check if the input is an array and if every item is of type number
+      if (Array.isArray(arrayOfNumbers) &amp;&amp; arrayOfNumbers.every(item =&gt; typeof item === 'number')) {
+        // Use the filter method to apply isNumberEven on each element and return an array of even numbers
+        return arrayOfNumbers.filter(this.isNumberEven);
+      }
+<span class="cstat-no" title="statement not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >      // If the input is not an array of numbers, throw an error</span></span>
 <span class="cstat-no" title="statement not covered" >      throw new Error(`[${arrayOfNumbers}] is not an array of "Numbers"`);</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
+    }
   
     // Method to check if all elements in an array are numbers
     // @param {Array&lt;Number&gt;} arrayOfNumbers - The array to be checked
     // @return {Boolean} - Returns true if all elements are numbers, false otherwise
-<span class="fstat-no" title="function not covered" >    isAllNumbers(arrayOfNumbers) {</span>
-<span class="cstat-no" title="statement not covered" >      // Check if the argument is an array</span>
-<span class="cstat-no" title="statement not covered" >      if (!Array.isArray(arrayOfNumbers)) {</span>
-<span class="cstat-no" title="statement not covered" >        throw new Error(`[${arrayOfNumbers}] is not an array`);</span>
-<span class="cstat-no" title="statement not covered" >      }</span>
-<span class="cstat-no" title="statement not covered" >      // Return true if every element in the array is of type number</span>
+    isAllNumbers(arrayOfNumbers) {
+      // Check if the argument is an array
+      if (!Array.isArray(arrayOfNumbers)) {
+        throw new Error(`[${arrayOfNumbers}] is not an array`);
+      }
+<span class="cstat-no" title="statement not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >      // Return true if every element in the array is of type number</span></span>
 <span class="cstat-no" title="statement not covered" >      return arrayOfNumbers.every(n =&gt; typeof n === 'number');</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
+    }
   
     // Method to check if a value is an integer
     // @param {Number} n - The value to be checked
@@ -244,7 +244,7 @@ class NumbersValidator {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-02-23T19:18:51.783Z
+                at 2025-02-23T20:13:45.823Z
             </div>
         <script src="prettify.js"></script>
         <script>
