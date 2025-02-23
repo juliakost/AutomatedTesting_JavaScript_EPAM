@@ -37,6 +37,10 @@ describe("positive tests", () => {
     expect(validator.isNumberEven(4)).to.be.equal(true);
   });
 
+  it('should return true if number is Integer', () => {
+      expect(validator.isInteger(7)).to.be.equal(true);
+  });
+
   });
 
 describe("nigative tests", () => {
@@ -53,6 +57,14 @@ describe("nigative tests", () => {
       expect(() => {
         validator.isNumberEven(input);
       }).to.throw(`[${input}] is not of type "Number" it is of type "${typeOfVariable}"`)
+    });
+
+    it('should throw an error when provided Integer not a Number value', () => {
+      const n = "n";
+
+      expect(() => {
+        validator.isInteger(n);
+      }).to.throw(`[${n}] is not a number`)
     });
     
   });

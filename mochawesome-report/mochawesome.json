@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 3,
-    "tests": 3,
-    "passes": 3,
+    "tests": 5,
+    "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2025-02-23T18:32:48.977Z",
-    "end": "2025-02-23T18:32:48.988Z",
+    "start": "2025-02-23T19:18:51.254Z",
+    "end": "2025-02-23T19:18:51.265Z",
     "duration": 11,
-    "testsRegistered": 3,
+    "testsRegistered": 5,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e75a4f6d-85bf-4dd9-9fa7-9a792bd0461c",
+      "uuid": "fd7ef705-89a3-419b-aa02-305c4a4a7bf1",
       "title": "",
       "fullFile": "C:\\Users\\Yuliia_Kostitsyna\\Documents\\AutomatedTestingMentoring_JSBasic\\test\\numbers-validator\\isNumberEven.spec.js",
       "file": "\\test\\numbers-validator\\isNumberEven.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d7ab6e48-6a64-42dd-ba19-dbdf9debf501",
+          "uuid": "f26e2872-520f-49bd-91b8-b577b8e935a5",
           "title": "isNumberEven",
           "fullFile": "C:\\Users\\Yuliia_Kostitsyna\\Documents\\AutomatedTestingMentoring_JSBasic\\test\\numbers-validator\\isNumberEven.spec.js",
           "file": "\\test\\numbers-validator\\isNumberEven.spec.js",
@@ -45,8 +45,8 @@
               "context": null,
               "code": "// Instantiates a new NumbersValidator object before each test and assigns it to 'validator'\nvalidator = new NumbersValidator();",
               "err": {},
-              "uuid": "5b130728-5d96-45b6-9aa0-1d559e0bd2b1",
-              "parentUUID": "d7ab6e48-6a64-42dd-ba19-dbdf9debf501",
+              "uuid": "445e97ae-479c-4a42-9847-f82ee86d6a88",
+              "parentUUID": "f26e2872-520f-49bd-91b8-b577b8e935a5",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "// Sets the validator variable to null to clean up memory after each test\nvalidator = null;",
               "err": {},
-              "uuid": "9e72e738-9f55-43be-913b-6c9e9beef7a5",
-              "parentUUID": "d7ab6e48-6a64-42dd-ba19-dbdf9debf501",
+              "uuid": "c2a3f32b-6a76-40a8-8b2d-d7667d43341d",
+              "parentUUID": "f26e2872-520f-49bd-91b8-b577b8e935a5",
               "isHook": true,
               "skipped": false
             }
@@ -74,7 +74,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "163c878f-7fcc-4fbd-9f66-3da899205a79",
+              "uuid": "0cfeaa70-05fd-4a19-83f6-461eaba4d40b",
               "title": "positive tests",
               "fullFile": "C:\\Users\\Yuliia_Kostitsyna\\Documents\\AutomatedTestingMentoring_JSBasic\\test\\numbers-validator\\isNumberEven.spec.js",
               "file": "\\test\\numbers-validator\\isNumberEven.spec.js",
@@ -94,15 +94,34 @@
                   "context": null,
                   "code": "// Using 'expect' to assert that the 'isNumberEven' method returns true when\n// passed the even number 4. The '.to.be.equal(true)' is the actual assertion check.\nexpect(validator.isNumberEven(4)).to.be.equal(true);",
                   "err": {},
-                  "uuid": "4084cd70-f077-4f34-b10c-77b6635d824b",
-                  "parentUUID": "163c878f-7fcc-4fbd-9f66-3da899205a79",
+                  "uuid": "2ddbb049-4688-4c07-a7f4-f0edd6f5a7ff",
+                  "parentUUID": "0cfeaa70-05fd-4a19-83f6-461eaba4d40b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should return true if number is Integer",
+                  "fullTitle": "isNumberEven positive tests should return true if number is Integer",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(validator.isInteger(7)).to.be.equal(true);",
+                  "err": {},
+                  "uuid": "826378ca-67d7-4485-bdd4-3af7425a4d74",
+                  "parentUUID": "0cfeaa70-05fd-4a19-83f6-461eaba4d40b",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "4084cd70-f077-4f34-b10c-77b6635d824b"
+                "2ddbb049-4688-4c07-a7f4-f0edd6f5a7ff",
+                "826378ca-67d7-4485-bdd4-3af7425a4d74"
               ],
               "failures": [],
               "pending": [],
@@ -113,7 +132,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "0c469d74-f887-4dec-b2fe-6fb1fdc58bdd",
+              "uuid": "16d3297d-ece4-4a5e-abf5-3f104a3f4b34",
               "title": "nigative tests",
               "fullFile": "C:\\Users\\Yuliia_Kostitsyna\\Documents\\AutomatedTestingMentoring_JSBasic\\test\\numbers-validator\\isNumberEven.spec.js",
               "file": "\\test\\numbers-validator\\isNumberEven.spec.js",
@@ -133,8 +152,8 @@
                   "context": null,
                   "code": "// Using 'expect' to assert that the 'isNumberEven' method returns true when\n// passed the even number 4. The '.to.be.equal(true)' is the actual assertion check.\nexpect(validator.isNumberEven(5)).to.be.equal(false);",
                   "err": {},
-                  "uuid": "d56a1f33-e66f-49ae-a500-d84bbba00641",
-                  "parentUUID": "0c469d74-f887-4dec-b2fe-6fb1fdc58bdd",
+                  "uuid": "70fee7ae-c8f1-4278-b595-1e46173b8cd2",
+                  "parentUUID": "16d3297d-ece4-4a5e-abf5-3f104a3f4b34",
                   "isHook": false,
                   "skipped": false
                 },
@@ -151,16 +170,35 @@
                   "context": null,
                   "code": "const input = \"four\";\nconst typeOfVariable = typeof input;\nexpect(() => {\n  validator.isNumberEven(input);\n}).to.throw(`[${input}] is not of type \"Number\" it is of type \"${typeOfVariable}\"`)",
                   "err": {},
-                  "uuid": "1fbfc95f-d837-4092-b1f4-ad2f2d631b4d",
-                  "parentUUID": "0c469d74-f887-4dec-b2fe-6fb1fdc58bdd",
+                  "uuid": "4cd639bd-f5a2-4274-9ab6-7b3356f4502f",
+                  "parentUUID": "16d3297d-ece4-4a5e-abf5-3f104a3f4b34",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should throw an error when provided Integer not a Number value",
+                  "fullTitle": "isNumberEven nigative tests should throw an error when provided Integer not a Number value",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const n = \"n\";\nexpect(() => {\n  validator.isInteger(n);\n}).to.throw(`[${n}] is not a number`)",
+                  "err": {},
+                  "uuid": "3d4b77b3-0d9a-4822-b51c-43b78ff56ef9",
+                  "parentUUID": "16d3297d-ece4-4a5e-abf5-3f104a3f4b34",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "d56a1f33-e66f-49ae-a500-d84bbba00641",
-                "1fbfc95f-d837-4092-b1f4-ad2f2d631b4d"
+                "70fee7ae-c8f1-4278-b595-1e46173b8cd2",
+                "4cd639bd-f5a2-4274-9ab6-7b3356f4502f",
+                "3d4b77b3-0d9a-4822-b51c-43b78ff56ef9"
               ],
               "failures": [],
               "pending": [],
