@@ -1,1 +1,1 @@
-# -AutomatedTesting_JavaScript_EPAM
+# AutomatedTesting_JavaScript_EPAM
