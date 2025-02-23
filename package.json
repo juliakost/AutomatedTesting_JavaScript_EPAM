@@ -21,6 +21,7 @@
   "author": "Yuliia Kostitsyna",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.21.0",
     "eslint": "^9.21.0",
     "globals": "^15.15.0"
   },
