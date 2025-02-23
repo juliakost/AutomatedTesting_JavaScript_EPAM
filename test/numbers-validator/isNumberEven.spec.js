@@ -41,12 +41,17 @@ describe("positive tests", () => {
       expect(validator.isInteger(7)).to.be.equal(true);
   });
 
-  it('should return array of even numbers if every item is of type number', () => {
+  it('should return array of even numbers if every Array item is of type number', () => {
     const NumbersArray = [1, 2, 3, 4, 5, 7];
     expect(validator.getEvenNumbersFromArray(NumbersArray)).to.eql([2, 4]);
   });
 
+  it('should return true if every Array item is of type number', () => {
+    const NumbersArrayAll = [1, -2, 3, 4, 5, 7];
+    expect(validator.isAllNumbers(NumbersArrayAll)).to.to.be.equal(true);
+  });
 });
+
 
 describe("nigative tests", () => {
   it('should return false if number is non-even', () => {
@@ -65,7 +70,7 @@ describe("nigative tests", () => {
     });
 
     it('should throw an error when provided Integer not a Number value', () => {
-      const n = "n";
+      const n = "5";
 
       expect(() => {
         validator.isInteger(n);
@@ -74,10 +79,16 @@ describe("nigative tests", () => {
 
     it('should throw an error when provided Array has not a Number value', () => {
       const notArray = 'not an array';
-
       expect(() => {
         validator.isAllNumbers(notArray);
       }).to.throw(`[${notArray}] is not an array`)
+    });
+
+    it('should throw an error if not every Arraay item is of type number', () => {
+      const NotNumbersArray = [1, 2, 3, '4', 5, 7];
+      expect(() => {
+        validator.getEvenNumbersFromArray(NotNumbersArray);
+      }).to.throw(`[${NotNumbersArray}] is not an array of "Numbers"`)
     });
     
   });
