@@ -39,7 +39,7 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-
+/*
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
@@ -48,8 +48,16 @@ export default defineConfig({
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
+    },*/
+    {
+      name: 'setup',
+      testMatch: 'setup.test.js',
     },
-
+    {
+      name: 'smoke',
+      dependencies: ['setup'],
+      testMatch: ['YKtest1.test.js', 'YKtest2.test.js'],
+}
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
@@ -68,7 +76,7 @@ export default defineConfig({
     // {
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
+     
   ],
 
   /* Run your local dev server before starting the tests */
