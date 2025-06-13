@@ -1,5 +1,5 @@
 const { test, expect } = require("@playwright/test"); // Import Playwright test utilities
-const { ContactPage } = require("../pages/ContactUsPage"); // Import the ContactPage POM class
+const { ContactPage } = require("../pages/contactUsPage.js"); // Import the ContactPage POM class
 
 // Wrap your test cases in a test.describe block
 test.describe('Contact Page "Ask Us Anything" form fill in Tests', () => {
@@ -10,9 +10,7 @@ test.describe('Contact Page "Ask Us Anything" form fill in Tests', () => {
     await page.goto("https://www.epam.com/about/who-we-are/contact");
   });
 
-  test("should navigate to Contact Us page and submit a form", async ({
-    page,
-  }) => {
+  test("should be possible to submit a Ask Us Anything form", async ({page,}) => {
     // Step 1: Create an instance of the ContactPage class
     const contactPage = new ContactPage(page);
 
