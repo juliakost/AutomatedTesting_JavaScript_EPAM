@@ -34,10 +34,18 @@ test.describe('Contact Page "Ask Us Anything" form fill in Tests', () => {
       whereDidYouHear
     );
 
-    // Step 4: Submit the form
+    // Step 4: Verify that filled info is preserved before  click on Submit
+
+    await expect(firstName).not.toBeEmpty;
+    await expect(lastName).not.toBeEmpty;
+    await expect(email).not.toBeEmpty;
+    await expect(phone).not.toBeEmpty;
+    await expect(whereDidYouHear).not.toBeEmpty;
+
+    // Step 5: Submit the form
     await contactPage.clickSumbit();
 
-    //Step 5:for NON-Prod ent-t without CAPTCHA: should see "Thank you" text
+    //Step 6:for NON-Prod ent-t without CAPTCHA: should see "Thank you" text
 
     const thankYouMessage = page.locator("text=Thank you for contacting us.");
     await expect(thankYouMessage).toBeVisible(); // Assert it's visible
