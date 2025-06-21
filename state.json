@@ -2,10 +2,10 @@
   "cookies": [
     {
       "name": "__cf_bm",
-      "value": "Hwh7c5QE9Tq8tf4keR9BCBDN_GjM0LmufQO_YwH_rNY-1749842468-1.0.1.1-MN8kPop.DV4eU4.UGsR8Yq0sRkA2yBjamvk.M4Wmpgi7DLq.ztiwaOFAhcHlkH4NX44ZLd3pDNyfrenGSq_7hj2UeYah8TqYeFRKyhEZgqM",
+      "value": "RuBZ0e1VIduzwxI9M3cp0OpS5dS2Cc5_PuhlLNbCgSw-1750074250-1.0.1.1-LWfFYSlvY.QGobrGzDruC44fgvOvsna473oIDZosgmB5lJLUaPn2xh9V_kswOquRqUDNsniPjqPKL5fS_10Qqe2wm05b2yTvCni.fXv.6d4",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1749844268,
+      "expires": 1750076049,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -22,7 +22,7 @@
     },
     {
       "name": "affinity",
-      "value": "\"6793196ca90641a4\"",
+      "value": "\"3d3744f15b526837\"",
       "domain": "www.epam.com",
       "path": "/",
       "expires": -1,
@@ -31,21 +31,51 @@
       "sameSite": "None"
     },
     {
+      "name": "sa-user-id",
+      "value": "s%253A0-aff3c89d-e8ab-5cbd-66f8-2a62b8af8a97.eIdm7Q4cRyokgBhW%252BY96hzt4fg0cufDpRNGabfGaCEM",
+      "domain": "www.epam.com",
+      "path": "/",
+      "expires": 1781610252,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v2",
+      "value": "s%253Ar_PIneirXL1m-CpiuK-Kl1WAMNY.k5wVycPUzzfmJ7Ipi5M4xrZYfevRK8JTAZfxzWja%252BNQ",
+      "domain": "www.epam.com",
+      "path": "/",
+      "expires": 1781610252,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v3",
+      "value": "s%253AAQAKILM-iw0Hh0-DL7zD1XdRNU11QSDPlCr2irGtEl2DC0avEPEBGAQgjYfAwgYwAToEjezzO0IE80Pd8g.9z7QN0XBwDQTa6%252FaG3jutNVu%252BfGGTPZrPBkaKAI%252BVUc",
+      "domain": "www.epam.com",
+      "path": "/",
+      "expires": 1781610252,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
       "name": "OptanonAlertBoxClosed",
-      "value": "2025-06-13T19:21:13.315Z",
+      "value": "2025-06-16T11:44:14.254Z",
       "domain": ".www.epam.com",
       "path": "/",
-      "expires": 1781378473,
+      "expires": 1781610254,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "OptanonConsent",
-      "value": "isGpcEnabled=0&datestamp=Fri+Jun+13+2025+21%3A21%3A13+GMT%2B0200+(Central+European+Summer+Time)&version=202411.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=d52ea418-8d09-479c-bcc7-7a4aa2a52255&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1",
+      "value": "isGpcEnabled=0&datestamp=Mon+Jun+16+2025+13%3A44%3A14+GMT%2B0200+(Central+European+Summer+Time)&version=202411.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=7574d718-6d9c-40f8-b4db-6a920a341209&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1",
       "domain": ".www.epam.com",
       "path": "/",
-      "expires": 1781378473,
+      "expires": 1781610254,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -55,7 +85,7 @@
       "value": ":::2",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1749846073,
+      "expires": 1750077854,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
@@ -65,7 +95,7 @@
       "value": ":::2",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1749846073,
+      "expires": 1750077854,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
@@ -75,7 +105,7 @@
       "value": ":::2",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1749846073,
+      "expires": 1750077854,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
@@ -85,7 +115,7 @@
       "value": ":::2",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1749846073,
+      "expires": 1750077854,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
@@ -95,37 +125,37 @@
       "value": "1:::2",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1784402473,
+      "expires": 1784634254,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "JJTdk-R",
-      "value": "35332991-f777-49ba-9a7e-1f6bb055c270:::2",
+      "value": "1a17bb43-a5e0-47d6-978d-3e2e55a33546:::2",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1784402473,
+      "expires": 1784634254,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "JJTdkLzJhXhh",
-      "value": "1749842474:::2",
+      "value": "1750074255:::2",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1749846073,
+      "expires": 1750077854,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "JJTdkLW6",
-      "value": "6860ef88-e143-4bfc-b6c3-7d70704d7885:::2",
+      "value": "438a10f2-3673-40ce-adec-eced4bcc9bb2:::2",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1749846073,
+      "expires": 1750077854,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
@@ -135,97 +165,137 @@
       "value": "1:::2",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1749846073,
+      "expires": 1750077854,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "JJTdeLW6",
-      "value": "6292df71-1c1e-462d-9207-f89a79a45352:::2",
+      "value": "75ae9330-5862-4836-8c05-d171b6a06e86:::2",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1749846073,
+      "expires": 1750077854,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "JJTdeLzJhXhh",
-      "value": "1749842474:::2",
+      "value": "1750074255:::2",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1749846073,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "_ga_W1T3XZ3Z92",
-      "value": "GS2.1.s1749842473$o1$g0$t1749842473$j60$l0$h0",
-      "domain": ".epam.com",
-      "path": "/",
-      "expires": 1784402473,
+      "expires": 1750077854,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "_ga",
-      "value": "GA1.1.956077479.1749842474",
+      "value": "GA1.1.1625058484.1750074255",
       "domain": ".epam.com",
       "path": "/",
-      "expires": 1784402473,
+      "expires": 1784634254,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
+      "name": "_ga_EYGYLWSTX2",
+      "value": "GS2.1.s1750074254$o1$g0$t1750074254$j60$l0$h0",
+      "domain": ".epam.com",
+      "path": "/",
+      "expires": 1784634254,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_W1T3XZ3Z92",
+      "value": "GS2.1.s1750074254$o1$g0$t1750074254$j60$l0$h0",
+      "domain": ".epam.com",
+      "path": "/",
+      "expires": 1784634254,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id",
+      "value": "s%3A0-aff3c89d-e8ab-5cbd-66f8-2a62b8af8a97.eIdm7Q4cRyokgBhW%2BY96hzt4fg0cufDpRNGabfGaCEM",
+      "domain": "qvdt3feo.com",
+      "path": "/",
+      "expires": 1781610252,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id",
+      "value": "s%3A0-aff3c89d-e8ab-5cbd-66f8-2a62b8af8a97.eIdm7Q4cRyokgBhW%2BY96hzt4fg0cufDpRNGabfGaCEM",
+      "domain": ".qvdt3feo.com",
+      "path": "/",
+      "expires": 1781610252,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v2",
+      "value": "s%3Ar_PIneirXL1m-CpiuK-Kl1WAMNY.k5wVycPUzzfmJ7Ipi5M4xrZYfevRK8JTAZfxzWja%2BNQ",
+      "domain": "qvdt3feo.com",
+      "path": "/",
+      "expires": 1781610252,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v2",
+      "value": "s%3Ar_PIneirXL1m-CpiuK-Kl1WAMNY.k5wVycPUzzfmJ7Ipi5M4xrZYfevRK8JTAZfxzWja%2BNQ",
+      "domain": ".qvdt3feo.com",
+      "path": "/",
+      "expires": 1781610252,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v3",
+      "value": "s%3AAQAKILM-iw0Hh0-DL7zD1XdRNU11QSDPlCr2irGtEl2DC0avEPEBGAQgjYfAwgYwAToEjezzO0IE80Pd8g.9z7QN0XBwDQTa6%2FaG3jutNVu%2BfGGTPZrPBkaKAI%2BVUc",
+      "domain": "qvdt3feo.com",
+      "path": "/",
+      "expires": 1781610252,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v3",
+      "value": "s%3AAQAKILM-iw0Hh0-DL7zD1XdRNU11QSDPlCr2irGtEl2DC0avEPEBGAQgjYfAwgYwAToEjezzO0IE80Pd8g.9z7QN0XBwDQTa6%2FaG3jutNVu%2BfGGTPZrPBkaKAI%2BVUc",
+      "domain": ".qvdt3feo.com",
+      "path": "/",
+      "expires": 1781610252,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
       "name": "__cf_bm",
-      "value": "sFBuESQKAA200fAk5jutWE_sCcbVrwE9XyGFJhDqetE-1749842468-1.0.1.1-yCMcXRF5Hvk3N3bpG9_M3e6xLbMfKcdh1yeRPaYNCK.jpPpnrwUECbn4Gx60eANowokdMa5K5iyQdyYTA3JLw67qw3sjqfsmaPPrt1wV0lE",
+      "value": "98uywgaKPgcj4fTkdEhXC7uPGTIHoIhXd3R8hjuu3PA-1750074250-1.0.1.1-qzrUP24Vp7VHflykQxXzUUmpEZiuqEtUyWyUjNvFp_6mAwBPJRiKla3qiU13EQWh9QT2TWvAcyE6m3jdS79krAx9Q3eoDbLyVnE3jo3hRg8",
       "domain": ".cookiepro.com",
       "path": "/",
-      "expires": 1749844268,
+      "expires": 1750076050,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "bcookie",
-      "value": "\"v=2&ef7e1fa6-7000-4ea0-806c-fd1c6d72d338\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1781378474,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "li_gc",
-      "value": "MTswOzE3NDk4NDI0NzQ7MjswMjF6POadOjZkBDR7SouqIo7I/hVdKm3cFRuHhSrmAOnREw==",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1765394474,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "lidc",
-      "value": "\"b=VGST03:s=V:r=V:a=V:p=V:g=3529:u=1:x=1:i=1749842474:t=1749928874:v=2:sig=AQEkJ5GY2skAroKOsKlMcdIBlHEuuizS\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1749928874,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "CTK",
-      "value": "1itlbqd1jgc23800",
+      "value": "1its8rpk7gc23800",
       "domain": ".indeed.com",
       "path": "/",
-      "expires": 1784402473,
+      "expires": 1784634254,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
@@ -235,14 +305,14 @@
       "value": "1",
       "domain": "conv.indeed.com",
       "path": "/",
-      "expires": 1749842653,
+      "expires": 1750074433,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "JSESSIONID",
-      "value": "node0e7umlwgsdjs7dl6jr0zle13y2331182.node0",
+      "value": "node012sgjxyagvde813g1mu8ib85b7357616.node0",
       "domain": "conv.indeed.com",
       "path": "/",
       "expires": -1,
@@ -252,7 +322,7 @@
     },
     {
       "name": "INDEED_CSRF_TOKEN",
-      "value": "WxnH2yAxoFla6JlwK3CtQjPpiCIYP8WA",
+      "value": "o7J25ZuVPkRiBFeKxLuh2jzMMo7gIUOD",
       "domain": "conv.indeed.com",
       "path": "/",
       "expires": -1,
@@ -262,17 +332,17 @@
     },
     {
       "name": "__cf_bm",
-      "value": "hzwD4cI4g2E6enBPg2HWOgOumxrXNW1NwaoNwF55Jfs-1749842474-1.0.1.1-Pbq0OvH4acHPxuMa8ZWF71PP1INUTqGQ.h5OBPr11d2L842Ui7ghk_E11_2TUvxiNkLNWFwQxt3YKt1JA6Hz4EGXPcPSwx6GzAoqRUROMBM",
+      "value": "atUrhLFSYgxVLGCSr_CapaBpk.Q.itJ0uOQ893d_DOQ-1750074255-1.0.1.1-Y9HY9IDAzAbWROS0JgjAE8AxXnWopdVPDUtw1Q7W2sEzqj2SrAdBqxJMzCBrhv1QLwc7H_l1y43slFr7WjCUtVvz8cuvrd1UOuCKlnJLykk",
       "domain": ".indeed.com",
       "path": "/",
-      "expires": 1749844273,
+      "expires": 1750076054,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_cfuvid",
-      "value": "53FGHh_nUhjas2m42ookeo7Uu_oZ4aoV0yOCHuqDxN8-1749842474105-0.0.1.1-604800000",
+      "value": "dgR7URSzcsh2.mw52nyav8zv6.BCz3LamY53Zuyprm8-1750074255036-0.0.1.1-604800000",
       "domain": ".indeed.com",
       "path": "/",
       "expires": -1,
@@ -281,8 +351,38 @@
       "sameSite": "None"
     },
     {
+      "name": "lidc",
+      "value": "\"b=TGST03:s=T:r=T:a=T:p=T:g=3517:u=1:x=1:i=1750074255:t=1750160655:v=2:sig=AQFc1KwI1z7THnPSvyfqy742kYcAFMZx\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1750160655,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bcookie",
+      "value": "\"v=2&63f2b540-457d-4a96-8a21-e1d6cd5b40a2\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1781610255,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "li_gc",
+      "value": "MTswOzE3NTAwNzQyNTU7MjswMjHSPHZC5M/+6D7I47e5G76UwuRwtYo6E4pcYs6w33u7dQ==",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1765626255,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
       "name": "YSC",
-      "value": "zv4xACJwU40",
+      "value": "p8nmZyO9xr8",
       "domain": ".youtube.com",
       "path": "/",
       "expires": -1,
@@ -292,34 +392,52 @@
     },
     {
       "name": "VISITOR_INFO1_LIVE",
-      "value": "ColrdmIIxqM",
+      "value": "kqYl6DlRi-E",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1765394473,
+      "expires": 1765626254,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "VISITOR_PRIVACY_METADATA",
-      "value": "CgJQTBIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiAu",
+      "value": "CgJQTBIhEh0SGwsMDg8QERITFBUWFxgZGhscHR4fICEiIyQlJiA8",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1765394473,
+      "expires": 1765626254,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "__Secure-ROLLOUT_TOKEN",
-      "value": "CL7JibaywOmJpgEQ6oPOmI_vjQMY6oPOmI_vjQM%3D",
+      "value": "CN7x8_yq7czcPxDDsbfS7vWNAxjDsbfS7vWNAw%3D%3D",
       "domain": ".youtube.com",
       "path": "/",
-      "expires": 1765394473,
+      "expires": 1765626254,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     }
   ],
-  "origins": []
+  "origins": [
+    {
+      "origin": "https://www.epam.com",
+      "localStorage": [
+        {
+          "name": "sa-user-id-v3",
+          "value": "s%3AAQAKILM-iw0Hh0-DL7zD1XdRNU11QSDPlCr2irGtEl2DC0avEPEBGAQgjYfAwgYwAToEjezzO0IE80Pd8g.9z7QN0XBwDQTa6%2FaG3jutNVu%2BfGGTPZrPBkaKAI%2BVUc"
+        },
+        {
+          "name": "sa-user-id-v2",
+          "value": "s%3Ar_PIneirXL1m-CpiuK-Kl1WAMNY.k5wVycPUzzfmJ7Ipi5M4xrZYfevRK8JTAZfxzWja%2BNQ"
+        },
+        {
+          "name": "sa-user-id",
+          "value": "s%3A0-aff3c89d-e8ab-5cbd-66f8-2a62b8af8a97.eIdm7Q4cRyokgBhW%2BY96hzt4fg0cufDpRNGabfGaCEM"
+        }
+      ]
+    }
+  ]
 }
