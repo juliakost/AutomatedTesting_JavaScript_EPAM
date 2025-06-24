@@ -10,7 +10,8 @@ class ContactPage {
       'span.museo-sans-light:has-text("Contact Us")'
     ); 
     this.inquiryReason = page.getByRole("combobox", {name: "Select the Reason for Your Inquiry*",});
-    this.reasonOptionsList = page.locator('.os-content').nth(1);
+    this.reasonListContainer = page.locator('.os-content').nth(1);
+    this.reasonOptionsList = this.reasonListContainer.locator('li');
     this.comboboxReasons = page.locator(`li.select2-results__option`);
     this.firstNameInput = page.getByLabel("First Name");
     this.lastNameInput = page.getByLabel("Last Name");
@@ -70,7 +71,30 @@ class ContactPage {
 
   async clickSelectReason() {
     await this.inquiryReason.click();
-    await this.reasonOptionsList.isVisible();
+     await expect(this.reasonListContainer).toBeVisible(); // Validate dropdown container visibility
+    console.log("Dropdown container is visible.");
+  }
+
+  async getReasonOptions() {
+  const count = await this.reasonOptionsList.count(); 
+  const options = [];
+
+  for (let i = 0; i < count; i++) {
+    const text = await this.reasonOptionsList.nth(i).textContent(); 
+    options.push(text.trim());
+  }
+
+  console.log(options); 
+  return options;
+}
+
+async clickSpecificReason(reason) {
+    await this.inquiryReason.click();
+
+    const dropdownOption = this.page.getByRole('option', { name: reason }); // Match option by name
+    await expect(dropdownOption).toBeVisible(); // Ensure visibility
+    await dropdownOption.click(); // Click on the dropdown option
+    console.log(`Clicked the dropdown option: ${reason}`);
   }
 }
 

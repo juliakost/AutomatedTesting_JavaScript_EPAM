@@ -4,7 +4,7 @@ const { ContactPage } = require("../pages/contactUsPage.js");
 test.describe('Contact Page "Ask Us Anything" form fill in Tests', () => {
   test.use({ storageState: "state.json" });
 
-  test("should be possible to submit a Ask Us Anything form", async ({
+  test("Should be possible to submit a Ask Us Anything form", async ({
     page,
   }) => {
     const contactPage = new ContactPage(page);
@@ -38,28 +38,39 @@ test.describe('Contact Page "Ask Us Anything" form fill in Tests', () => {
     await expect(thankYouMessage).toBeVisible();
   });
 
-  test("possible to submit a Ask Us Anything form with non-default 'Reason for Your Inquiry' option", async ({
+  test("check available optoions of 'Reason for Your Inquiry' drop-down", async ({
     page,
   }) => {
     const contactPage = new ContactPage(page);
     await contactPage.goto();
     await contactPage.verifyContactHeader();
     await contactPage.clickSelectReason();
-    await expect(contactPage.reasonOptionsList).toHaveText([
-    'General Information Request',
-    'Talk to Sales in North America',
-    'Talk to Sales in Continental Europe',
-    'Talk to Sales in the UK',
-    'Talk to Sales in Northern Europe',
-    'Talk to Sales in APAC',
-    'Talk to the Consulting Team',
-    'Press Inquiry',
-    'Careers',
-    'Employment Verification',
-    'Partner Relations',
-    'Investor Relations',
-    'Analyst Relations',
-    'Website Feedback'
-  ]);
+    // Collect dropdown options
+    const dropdownOptions = await contactPage.getReasonOptions();
+
+    // Assert that dropdown options match expected values
+    expect(dropdownOptions).toEqual([
+      "General Information Request",
+      "Talk to Sales in North America",
+      "Talk to Sales in Continental Europe",
+      "Talk to Sales in the UK",
+      "Talk to Sales in Northern Europe",
+      "Talk to Sales in APAC",
+      "Talk to the Consulting Team",
+      "Press Inquiry",
+      "Careers",
+      "Employment Verification",
+      "Partner Relations",
+      "Investor Relations",
+      "Analyst Relations",
+      "Website Feedback",
+    ]);
+  });
+  test("Select specific dropdown option", async ({ page }) => {
+    const contactPage = new ContactPage(page);
+    await contactPage.goto();
+
+    // Select "Talk to Sales in North America" from the dropdown
+    await contactPage.clickSpecificReason("Talk to Sales in North America");
   });
 });
