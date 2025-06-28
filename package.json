@@ -170,6 +170,9 @@
   "devDependencies": {
     "@playwright/test": "^1.52.0",
     "@types/node": "^24.0.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-playwright": "^2.2.0",
+    "eslint-plugin-prettier": "^5.5.1",
     "mocha": "^11.1.0"
   },
   "scripts": {

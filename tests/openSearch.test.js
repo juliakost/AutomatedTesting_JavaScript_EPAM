@@ -1,4 +1,3 @@
-
 /*Test case #1: Opening of search panel
 Navigate to https://www.epam.com/
 Click Search button
