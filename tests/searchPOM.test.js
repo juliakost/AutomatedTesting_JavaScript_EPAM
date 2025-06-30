@@ -1,5 +1,5 @@
 const { test, expect } = require("@playwright/test"); // Import Playwright test utilities
-const { GlobalSearch } = require("../pages/globalSearch.js"); // Import the globalSearch POM class
+const { GlobalSearch } = require("../pages/globalSearchPage.js"); // Import the globalSearch POM class
 
 // Wrap your test cases in a test.describe block
 test.describe('Search is run from EPAM main page', () => {

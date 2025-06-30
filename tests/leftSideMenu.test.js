@@ -1,5 +1,5 @@
 const { test, expect } = require("@playwright/test");
-const { HamburgerMenu } = require("../pages/hamburgerMenu.js");
+const { HamburgerMenu } = require("../pages/hamburgerMenuPage.js");
 
 test.describe("Hamburger Menu Tests", () => {
 test.use({storageState: 'state.json'});
