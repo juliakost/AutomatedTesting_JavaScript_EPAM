@@ -11,7 +11,7 @@ class ContactPage {
     ); 
     this.inquiryReason = page.getByRole("combobox", {name: "Select the Reason for Your Inquiry*",});
     this.reasonListContainer = page.locator('.os-content').nth(1);
-    this.reasonOptionsList = this.reasonListContainer.locator('li');
+    this.reasonOptionsList = page.reasonListContainer.locator('li');
     this.comboboxReasons = page.locator(`li.select2-results__option`);
     this.firstNameInput = page.getByLabel("First Name");
     this.lastNameInput = page.getByLabel("Last Name");

@@ -25,12 +25,6 @@ test.describe('Contact Page "Ask Us Anything" form fill in Tests', () => {
       whereDidYouHear
     );
 
-    await expect(firstName).not.toBeEmpty;
-    await expect(lastName).not.toBeEmpty;
-    await expect(email).not.toBeEmpty;
-    await expect(phone).not.toBeEmpty;
-    await expect(whereDidYouHear).not.toBeEmpty;
-
     await contactPage.clickSumbit();
 
     /*for NON-Prod ent-t without CAPTCHA: should see "Thank you" text
