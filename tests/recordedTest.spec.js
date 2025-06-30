@@ -6,19 +6,17 @@ test.describe("Careers Tests", () => {
     await page.goto("https://www.epam.com");
   });
 
-  test("should find some job openings for entered keyword and location", async ({
+  test("find jobs for entered keyword, location", async ({
     page,
   }) => {
     await page.getByRole("link", { name: "Careers" }).nth(1).click();
     await page.getByRole("textbox", { name: "Keyword or job ID" }).click();
     await page.getByRole("textbox", { name: "Keyword or job ID" }).fill("test");
 
-    await page.getByRole("textbox", { name: "Budapest" }).click();
-    await page.getByRole("combobox").filter({ hasText: /^$/ }).fill("poland");
-    await page
-      .getByLabel("Poland", { exact: true })
-      .getByText("Poland", { exact: true })
-      .click();
+    await page.click('span.select2-selection.select2-selection--single');
+   
+    await page.getByRole("combobox").filter({ hasText: /^$/ }).fill("Poland");
+    await page.getByText("Poland", { exact: true }).click();
     await page.getByRole("option", { name: "All Cities in Poland" }).click();
 
     await page.getByText("All Skills").click();
