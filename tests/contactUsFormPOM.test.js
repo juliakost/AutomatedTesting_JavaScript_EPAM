@@ -3,6 +3,10 @@ const { ContactPage } = require("../pages/contactUsPage.js");
 
 test.describe('Contact Page "Ask Us Anything" form fill in Tests', () => {
   test.use({ storageState: "state.json" });
+  test.beforeEach(async ({ page }) => {
+    await page.goto("https://www.epam.com/about/who-we-are/contact");
+  });
+
 
   test("Should be possible to submit a Ask Us Anything form", async ({
     page,
@@ -36,7 +40,7 @@ test.describe('Contact Page "Ask Us Anything" form fill in Tests', () => {
     page,
   }) => {
     const contactPage = new ContactPage(page);
-    await contactPage.goto();
+    //await contactPage.goto();
     await contactPage.verifyContactHeader();
     await contactPage.clickSelectReason();
     // Collect dropdown options
@@ -63,7 +67,7 @@ test.describe('Contact Page "Ask Us Anything" form fill in Tests', () => {
 
   test("Select specific dropdown option", async ({ page }) => {
     const contactPage = new ContactPage(page);
-    await contactPage.goto();
+    //await contactPage.goto();
 
     // Select "Talk to Sales in North America" from the dropdown
     await contactPage.clickSpecificReason("Talk to Sales in North America");

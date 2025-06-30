@@ -11,7 +11,7 @@ class ContactPage {
     ); 
     this.inquiryReason = page.getByRole("combobox", {name: "Select the Reason for Your Inquiry*",});
     this.reasonListContainer = page.locator('.os-content').nth(1);
-    this.reasonOptionsList = page.reasonListContainer.locator('li');
+    //this.reasonOptionsList = page.reasonListContainer.locator('li');
     this.comboboxReasons = page.locator(`li.select2-results__option`);
     this.firstNameInput = page.getByLabel("First Name");
     this.lastNameInput = page.getByLabel("Last Name");
@@ -76,11 +76,11 @@ class ContactPage {
   }
 
   async getReasonOptions() {
-  const count = await this.reasonOptionsList.count(); 
+  const count = await this.comboboxReasons.count(); 
   const options = [];
 
   for (let i = 0; i < count; i++) {
-    const text = await this.reasonOptionsList.nth(i).textContent(); 
+    const text = await this.comboboxReasons.nth(i).textContent(); 
     options.push(text.trim());
   }
 
