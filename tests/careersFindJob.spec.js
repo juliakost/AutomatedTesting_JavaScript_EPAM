@@ -20,10 +20,7 @@ test.describe("Careers Tests", () => {
     await page.getByRole("option", { name: "All Cities in Poland" }).click();
 
     await page.getByText("All Skills").click();
-    await page
-      .getByRole("treeitem", { name: "Software, System, and Test" })
-      .locator("span")
-      .click();
+    await page.getByRole("treeitem", { name: "Software, System, and Test" }).locator("span").click();
     await page.getByRole("button", { name: "Find" }).click();
     await expect(page.getByText(/We found \d+ job openings/)).toBeVisible();
   });
