@@ -6,12 +6,9 @@ class ContactPage {
     this.page = page;
 
     // Locators
-    this.contactHeader = page.locator(
-      'span.museo-sans-light:has-text("Contact Us")'
-    ); 
+    this.contactHeader = page.locator('span.museo-sans-light:has-text("Contact Us")'); 
     this.inquiryReason = page.getByRole("combobox", {name: "Select the Reason for Your Inquiry*",});
-    this.reasonListContainer = page.locator('.os-content').nth(1);
-    //this.reasonOptionsList = page.reasonListContainer.locator('li');
+    this.reasonListContainer = page.locator('.os-content').nth(1); 
     this.comboboxReasons = page.locator(`li.select2-results__option`);
     this.firstNameInput = page.getByLabel("First Name");
     this.lastNameInput = page.getByLabel("Last Name");
@@ -22,9 +19,7 @@ class ContactPage {
       name: "How did you hear about EPAM?",
     });
     this.comboboxOptions = page.locator(`li.select2-results__option`);
-    this.gdprCheckbox = page.locator(
-      'input[type="checkbox"][aria-required="true"]'
-    );
+    this.gdprCheckbox = page.locator('input[type="checkbox"][aria-required="true"]');
     this.submitButton = page.getByRole("button", { name: "Submit" });
   }
   async goto() {

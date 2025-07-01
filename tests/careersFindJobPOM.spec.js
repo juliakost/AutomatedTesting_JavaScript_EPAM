@@ -43,5 +43,5 @@ test.describe("Careers job search", () => {
 
     await expect(careesJobSearch.searchResultsList).toBeVisible();
 
-  });
+  }) ;
 });
