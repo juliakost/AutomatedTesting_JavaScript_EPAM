@@ -66,7 +66,7 @@ class ContactPage {
 
   async clickSelectReason() {
     await this.inquiryReason.click();
-     await expect(this.reasonListContainer).toBeVisible(); // Validate dropdown container visibility
+    await expect(this.reasonListContainer).toBeVisible(); // Validate dropdown container visibility
     console.log("Dropdown container is visible.");
   }
 
