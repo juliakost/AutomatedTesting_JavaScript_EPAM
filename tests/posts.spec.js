@@ -1,4 +1,3 @@
-// posts.spec.js
 const { test, expect } = require('@playwright/test');
 
 test.describe('Posts API', () => {
@@ -8,18 +7,18 @@ test.describe('Posts API', () => {
     // Create a new post with POST
     const createResponse = await request.post('/posts', {
       data: {
-        title: 'My Title',
-        body: 'My Body',
-        userId: 1,
+        title: 'Yuliia Title',
+        body: 'Yuliia Body',
+        userId: 2,
       },
     });
     expect(createResponse.ok()).toBeTruthy();
-    expect(response.status()).toBe(201);
+    expect(createResponse.status()).toBe(201);
   });
 
   test('verify existing post with GET', async ({ request }) => {
     // Use a known postId to verify
-    const knownPostId = 1; // Example postId
+    const knownPostId = 2; // Example postId
 
     const fetchResponse = await request.get(`/posts/${knownPostId}`);
     expect(fetchResponse.ok()).toBeTruthy();
